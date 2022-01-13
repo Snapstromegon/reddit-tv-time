@@ -1,0 +1,48 @@
+*{
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+}
+
+.timebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.timebox:nth-child(even) {
+  background-color: grey;
+  border: 1px solid #fff;
+  border-radius: 3%;
+}
+
+.main > * {
+  color: #f00;
+}
+
+select{
+  width: 33%;
+  color: black;
+  position: absolute;
+  bottom: 0;
+}
+option{
+  color: black;
+}
+
+.timebox .timezone {
+  font-size: 80px;
+}
+.timebox .time{
+  font-size: 150px;
+  font-variant-numeric: tabular-nums;
+}

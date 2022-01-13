@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>World Clock TV 2</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <script type="module" src="javascript/script.js"></script>
+  </head>
+  <body>
+    <!---Upperleft -->
+    <div class="timebox" data-default-timezone="ETC/GMT-8" >
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <select class="selectTime">
+        <option>Vælg</option>
+      </select>
+    </div>
+    <!---Uppermiddle -->
+    <div class="timebox" data-default-timezone="Europe/London">
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <select class="selectTime">
+        <option>Vælg</option>
+      </select>
+    </div>
+    <!---Upperright -->
+    <div class="timebox" data-default-timezone="America/New_york">
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <select class="selectTime">
+        <option>Vælg</option>
+      </select>
+    </div>
+    <!---Lowerleft -->
+    <div class="timebox" data-default-timezone="America/Los_angeles">
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <select class="selectTime">
+        <option>Vælg</option>
+      </select>
+    </div>
+    <!---Lowermid -->
+    <div class="timebox main" data-default-timezone="Europe/Copenhagen" data-overwrite-name="TV 2">
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <!--Without select, because this one is fixed-->
+    </div>
+    <!---Lowerright -->
+    <div class="timebox" data-default-timezone="Australia/Sydney">
+      <h1 class="timezone"></h1>
+      <p class="time"></p>
+      <select class="selectTime">
+        <option>Vælg</option>
+      </select>
+    </div>
+  </body>
+</html>
